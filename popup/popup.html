@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dexk</title>
+    <link rel="stylesheet" href="bulma.min.css">
+</head>
+
+<body>
+    <div class="container.is-widescreen m-3">
+        <h1 class="title">Dexk</h1>
+
+        <div class="field">
+            <label class="label">Status</label>
+            <span id="runningSpan" class="tag is-success">Running</span>
+            <span id="stoppedSpan" class="tag is-danger">Stopped</span>
+        </div>
+    </div>
+
+    <div class="container.is-widescreen m-3">
+        <div class="field">
+            <label class="label">Location ID</label>
+            <div class="select">
+                <select id="locationId">
+                </select>
+            </div>
+            <p id="locationIdError" class="help is-danger" style="display: none;">Please select a valid location.</p>
+
+        </div>
+    </div>
+
+    <div class="container.is-widescreen m-3">
+        <label class="label">Start Date</label>
+        <div class="control">
+            <input type="date" id="startDate" class="input">
+        </div>
+        <p id="startDateError" class="help is-danger" style="display: none;">Please enter a valid start date.</p>
+
+    </div>
+
+
+    <div class="container.is-widescreen m-3">
+        <label class="label">End Date</label>
+        <div class="control">
+            <input type="date" id="endDate" class="input">
+        </div>
+        <p id="endDateError" class="help is-danger" style="display: none;">Please enter a valid end date.</p>
+
+    </div>
+
+    <div class="container.is-widescreen m-3">
+        <button class="button is-success is-fullwidth" id="startButton">Save & Start</button>
+    </div>
+
+    <div class="container.is-widescreen m-3">
+        <button class="button is-danger is-fullwidth" id="stopButton">Stop</button>
+    </div>
+
+    <div class="container.is-widescreen m-3">
+        <p style="opacity: 50%; font-size: 11px;">Crafted with ❤ By Dev Raj Khadka</p>
+    </div>
+
+</body>
+<script src="spacetime.min.js"></script>
+<script src="popup.js"></script>
+
+</html>
